@@ -20,7 +20,13 @@
 2. **WHERE**  = filtreleme
 3. String filtreleme yaparken 'tek tirnak ' kullanmak zorunludur.
 
-      ### Comparison Operators
+### WHERE LIST
+1. Comparison Operators
+2. Logical Operators
+3. BETWEEN 
+4. IN
+
+### Comparison Operators
 | Operator | Description                |
 |----------|----------------------------|
 | datatype < datatype | Less than                  |
@@ -32,7 +38,7 @@
 | datatype != datatype | Not equal                  |
 
 
-   ### Logical Operators
+### Logical Operators
 1. boolean AND boolean → boolean
 2. boolean OR boolean → boolean
 3. NOT boolean → boolean
@@ -50,5 +56,20 @@
 - `a OR b`: `a` veya `b` değerleri `true` olduğunda sonuç `true` olur, diğer durumlarda sonuc `false` olur. (`null` değerler sonucu `null` yapar)
 - `NOT a`: `a` değeri `true` ise sonuç `false`, `false` ise sonuç `true`, `null` ise sonuç `null` olur.
        
-        Not in =  Bu operatör, bir alt sorgudaki belirli değerlerin listesinde bulunmayan değerleri seçmek için kullanılır.
-        WHERE column_name NOT IN (value1, value2, ...);
+### NOT IN 
+**Not in** = Bu operatör, bir alt sorgudaki belirli değerlerin listesinde bulunmayan değerleri seçmek için kullanılır.
+
+    WHERE column_name NOT IN (value1, value2, ...);
+
+### BETWEEN
+**Between** = belirli bir aralıkta değerleri sorgulamak için kullanılan bir operatördür. Bu operatör, bir değerin belirli bir aralık içinde olup olmadığını kontrol etmek için kullanılır. BETWEEN operatörü genellikle WHERE ifadesi içinde kullanılır. 
+
+    SELECT * FROM film
+    WHERE length BETWEEN 90 AND 120;
+
+### IN
+**IN** = sorgularında bir sütundaki değerlerin belirli bir liste içinde olup olmadığını kontrol etmek için kullanılan bir operatördür. Bu operatör, bir değerin belirli bir liste içinde bulunup bulunmadığını kontrol etmek için kullanılır.  IN operatörü genellikle WHERE ifadesi içinde kullanılır
+
+    SELECT column_name(s)
+    FROM table_name
+    WHERE column_name IN (value1, value2, ...);
