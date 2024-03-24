@@ -33,6 +33,7 @@ public class Main {
         categories.add(new Category("Phone"));
         categories.add(new Category("Notebook"));
 
+
         //Phones
         phones.add(new Phone("SAMSUNG GALAXY A51", 3199, brandList.get(7).getName(), 128, 6.5,32,4000,6,"Sıyah"));
         phones.add(new Phone("iPhone 11 64 GB", 7379, brandList.get(0).getName(), 64, 6.1, 5, 3046,6,"Mavi"));
@@ -63,7 +64,7 @@ public class Main {
             case 3:
                 System.out.println("\nMarka Listesi");
                 for (Brand brand : brandList) {
-                    System.out.println(brand.getName());
+                    System.out.println(" - "+brand.getName());
                 }
                 break;
             case 4:

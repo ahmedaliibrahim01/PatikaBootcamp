@@ -2,11 +2,13 @@ package Week_5.PatikaStore;
 
 public class Brand {
     private String name;
-    private int id = 0;
+    private static long idCounter = 0;
+    private long id;
 
     public Brand(String name) {
         this.name = name;
-        this.id++;
+        idCounter++;
+        this.id = idCounter;
     }
 
     public String getName() {
@@ -17,7 +19,7 @@ public class Brand {
         this.name = name;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
