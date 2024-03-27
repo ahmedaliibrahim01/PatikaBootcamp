@@ -78,4 +78,19 @@
 
 
 ### LIKE
-**LIKE** = 
+**LIKE** = bir sorguda belirli bir deseni veya karakter dizisini aramak için kullanılan bir operatördür. Genellikle bir "WHERE" ifadesi içinde kullanılır ve bir sütunun değerinin belirli bir desene uyan bir değeri içerip içermediğini kontrol etmek için kullanılır.
+Temelde iki önemli özel karakter bulunur:
+
+    %: Herhangi bir karakterlerin sıfır, bir veya birden fazla tekrarını temsil eder.
+    _: Tek bir karakteri temsil eder.
+
+### ILIKE
+**ILIKE** = "LIKE" operatörünün benzer bir versiyonudur, ancak büyük-küçük harf duyarsız eşleşmeleri gerçekleştirir. Bu operatör, karakterlerin büyük veya küçük harf olup olmadığına bakmaksızın desen eşleşmesi yapar.
+
+Temel olarak, "ILIKE" operatörü, "LIKE" operatöründen farklı olarak büyük/küçük harf farkını göz ardı eder.
+
+### LIMIT
+**LIMIT** = bir sorgunun sonuç kümesindeki satır sayısını sınırlamak için kullanılan bir anahtar kelimedir. Genellikle bir "SELECT" sorgusu ile kullanılır ve geri döndürülen sonuç kümesinin belirli bir sayıda satır içermesini sağlar. Bu, büyük veri kümeleri üzerinde çalışırken sorgu sonuçlarını kontrol etmek ve yönetmek için yaygın bir tekniktir.
+
+### OFFSET
+**OFFSET** = 
