@@ -10,9 +10,9 @@
 
 ### 2. Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 
- - insert into employee (id, name, birthday, email) values (1, 'Tudor', '1957-03-21', 'tsisse0@nydailynews.com');
- - insert into employee (id, name, birthday, email) values (2, 'Kiel', '1914-01-22', 'kiczokvitz1@cnn.com');
- - insert into employee (id, name, birthday, email) values (3, 'Gerhardine', '1912-07-17', 'goteague2@free.fr');
+- insert into employee (id, name, birthday, email) values (1, 'Tudor', '1957-03-21', 'tsisse0@nydailynews.com');
+- insert into employee (id, name, birthday, email) values (2, 'Kiel', '1914-01-22', 'kiczokvitz1@cnn.com');
+- insert into employee (id, name, birthday, email) values (3, 'Gerhardine', '1912-07-17', 'goteague2@free.fr');
 - insert into employee (id, name, birthday, email) values (4, 'Brock', '1941-06-17', 'btearle3@vimeo.com');
 - insert into employee (id, name, birthday, email) values (5, 'Cornell', '2016-02-25', 'cpennick4@pinterest.com');
 - insert into employee (id, name, birthday, email) values (6, 'Ulick', '1939-03-08', 'uwytchard5@earthlink.net');
@@ -65,67 +65,57 @@
 
 1. Bir çalışanın adını güncelleme:
 
-
-    UPDATE employee
-    SET name = 'John Doe'
-    WHERE id = 1;
+        UPDATE employee
+        SET name = 'John Doe'
+        WHERE id = 1;
 
 2. Bir çalışanın doğum tarihini güncelleme:
 
-
-    UPDATE employee
-    SET birthday = '1990-05-15'
-    WHERE id = 2;
+        UPDATE employee
+        SET birthday = '1990-05-15'
+        WHERE id = 2;
 
 3. Bir çalışanın e-posta adresini güncelleme:
 
-
-    UPDATE employee
-    SET email = 'john.doe@example.com'
-    WHERE id = 3;
+        UPDATE employee
+        SET email = 'john.doe@example.com'
+        WHERE id = 3;
 
 4. Bir çalışanın adını ve e-posta adresini güncelleme:
 
-
-    UPDATE employee
-    SET name = 'Jane Smith', email = 'jane.smith@example.com'
-    WHERE id = 4;
+        UPDATE employee
+        SET name = 'Jane Smith', email = 'jane.smith@example.com'
+        WHERE id = 4;
 
 5. Bir çalışanın doğum tarihini ve e-posta adresini güncelleme:
 
-
-    UPDATE employee
-    SET birthday = '1985-10-20', email = 'new.email@example.com'
-    WHERE id = 5;
+        UPDATE employee
+        SET birthday = '1985-10-20', email = 'new.email@example.com'
+        WHERE id = 5;
 
 ### 4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 
 1. İsim (name) sütununa göre bir çalışanı silme:
 
-
-    DELETE FROM employee
-    WHERE name = 'Eloise';
+        DELETE FROM employee
+        WHERE name = 'Eloise';
 
 2. Doğum tarihi (birthday) sütununa göre bir çalışanı silme:
 
-
-    DELETE FROM employee
-    WHERE birthday = '1958-05-30';
+        DELETE FROM employee
+        WHERE birthday = '1958-05-30';
 
 3. E-posta (email) sütununa göre bir çalışanı silme:
 
-
-    DELETE FROM employee
-    WHERE email = 'nslatford@va.gov';
+        DELETE FROM employee
+        WHERE email = 'nslatford@va.gov';
 
 4. Belirli bir id'ye (id) sahip çalışanı silme:
 
-
-    DELETE FROM employee
-    WHERE id = 10;
+        DELETE FROM employee
+        WHERE id = 10;
 
 5. Birden fazla koşulu birleştirerek bir çalışanı silme:
 
-
-    DELETE FROM employee
-    WHERE name = 'Alexandr' AND birthday = '1936-11-13';
+        DELETE FROM employee
+        WHERE name = 'Alexandr' AND birthday = '1936-11-13';
