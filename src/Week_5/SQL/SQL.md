@@ -93,4 +93,7 @@ Temel olarak, "ILIKE" operatörü, "LIKE" operatöründen farklı olarak büyük
 **LIMIT** = bir sorgunun sonuç kümesindeki satır sayısını sınırlamak için kullanılan bir anahtar kelimedir. Genellikle bir "SELECT" sorgusu ile kullanılır ve geri döndürülen sonuç kümesinin belirli bir sayıda satır içermesini sağlar. Bu, büyük veri kümeleri üzerinde çalışırken sorgu sonuçlarını kontrol etmek ve yönetmek için yaygın bir tekniktir.
 
 ### OFFSET
-**OFFSET** = 
+**OFFSET** = genellikle "LIMIT" ifadesiyle birlikte kullanılır. "OFFSET", sonuç kümesinde belirli bir konumdan başlayarak sonuçları alma işlemi için kullanılır. Yani, sonuç kümesinde belirli bir başlangıç noktasından itibaren sonuçları almak için kullanılır.
+
+Örneğin, "LIMIT" ve "OFFSET" ifadelerini birlikte kullanarak, bir sonuç kümesinin belirli bir sayfa numarasından başlayarak belirli bir sayıda satırın alınmasını sağlayabilirsiniz.
+
