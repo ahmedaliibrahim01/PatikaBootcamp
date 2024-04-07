@@ -15,6 +15,8 @@ public class Notepad {
 
         fileWriter(text);
         fileReader();
+
+
     }
 
     public static void fileWriter(String text){
