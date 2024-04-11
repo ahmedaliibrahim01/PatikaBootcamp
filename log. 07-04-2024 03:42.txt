@@ -1,0 +1,4 @@
+[07-04-2024 03:42] Bölme işlemi başlatıldı. Sayı : 20, Bolen : 5
+[07-04-2024 03:42] Bölme işlemi başlatıldı. Sayı : 20, Bolen : 5
+[07-04-2024 03:42] Bölme işlemi başlatıldı. Sayı : 20, Bolen : 5
+[07-04-2024 03:42] Bölme işlemi başlatıldı. Sayı : 20, Bolen : 4
