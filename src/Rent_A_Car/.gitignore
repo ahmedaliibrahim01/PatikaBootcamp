@@ -1,5 +1,5 @@
 ### IntelliJ IDEA ###
-out/
+../Week_7/Rent_A_Car/out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
