@@ -11,23 +11,23 @@ public class Main {
                 "0 - Çıkış Yap");
 
         // Lists
-        TreeSet<Brand> brands = new TreeSet<>(new Sorter());
+        TreeSet<PBrand> brands = new TreeSet<>(new Sorter());
         List<Category> categories = new ArrayList<>();
         List<Phone> phones = new ArrayList<>();
         List<NoteBook> noteBooks = new ArrayList<>();
 
         //Brands
-        brands.add(new Brand("Samsung"));
-        brands.add(new Brand("Lenovo"));
-        brands.add(new Brand("Apple"));
-        brands.add(new Brand("Huawei"));
-        brands.add(new Brand("Casper"));
-        brands.add(new Brand("Asus"));
-        brands.add(new Brand("HP"));
-        brands.add(new Brand("Xiaomi"));
-        brands.add(new Brand("Monster"));
+        brands.add(new PBrand("Samsung"));
+        brands.add(new PBrand("Lenovo"));
+        brands.add(new PBrand("Apple"));
+        brands.add(new PBrand("Huawei"));
+        brands.add(new PBrand("Casper"));
+        brands.add(new PBrand("Asus"));
+        brands.add(new PBrand("HP"));
+        brands.add(new PBrand("Xiaomi"));
+        brands.add(new PBrand("Monster"));
 
-        List<Brand> brandList = new ArrayList<>(brands);
+        List<PBrand> brandList = new ArrayList<>(brands);
 
         //Categories
         categories.add(new Category("Phone"));
@@ -63,7 +63,7 @@ public class Main {
                 break;
             case 3:
                 System.out.println("\nMarka Listesi");
-                for (Brand brand : brandList) {
+                for (PBrand brand : brandList) {
                     System.out.println(" - "+brand.getName());
                 }
                 break;

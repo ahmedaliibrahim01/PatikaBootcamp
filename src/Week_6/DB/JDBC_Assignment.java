@@ -15,7 +15,6 @@ public class JDBC_Assignment {
         ResultSet data = null;
         try {
             connection = DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
-
         } catch (SQLException e) {
             System.out.println("Connection is not successful");
             System.out.println(e.getMessage());
