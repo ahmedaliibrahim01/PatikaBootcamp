@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="postgresql-42.6.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Week_7/Patika_Rent_A_Car-main/PATIKA_RENTACAR/PATIKA_RENTACAR/postgresql-42.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

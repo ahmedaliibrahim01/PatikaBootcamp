@@ -1,11 +1,11 @@
 package Week_5.PatikaStore;
 
-public class Brand {
+public class PBrand {
     private String name;
     private static long idCounter = 0;
     private long id;
 
-    public Brand(String name) {
+    public PBrand(String name) {
         this.name = name;
         idCounter++;
         this.id = idCounter;
