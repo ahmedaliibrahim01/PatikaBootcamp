@@ -16,7 +16,7 @@
             <!-- Hibernate properties -->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/> <!-- update or "validate" or "create" or "create-drop" -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/> <!-- update or "validate" or "create" or "create-drop" -->
         </properties>
     </persistence-unit>
 </persistence>

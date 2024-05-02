@@ -20,18 +20,18 @@ public class Book {
     @Column(name = "book_stock")
     private int stock;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "book_author_id", referencedColumnName = "author_id")
     private Author author;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "book_publisher_id", referencedColumnName = "publisher_id")
     private Publisher publisher;
 
-    @OneToMany(mappedBy = "book")
+    @OneToMany(mappedBy = "book", fetch = FetchType.LAZY)
     private List<BookBorrowing> bookBorrowingList;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "book_category",
             joinColumns = @JoinColumn(name = "book_id"),
@@ -41,7 +41,6 @@ public class Book {
 
     public Book() {
     }
-
 
     public Book(String name, LocalDate publicationYear, int stock, Author author, Publisher publisher, List<Category> categoryList) {
         this.name = name;

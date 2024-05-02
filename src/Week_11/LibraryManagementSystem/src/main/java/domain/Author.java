@@ -21,7 +21,7 @@ public class Author {
     @Column(name = "author_country")
     private String country;
 
-    @OneToMany(mappedBy = "author")
+    @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
     private List<Book> bookList;
 
     public Author() {

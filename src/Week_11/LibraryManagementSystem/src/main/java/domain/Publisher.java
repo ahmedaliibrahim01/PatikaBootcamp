@@ -21,7 +21,7 @@ public class Publisher {
     @Column(name = "publisher_address")
     private String address;
 
-    @OneToMany(mappedBy = "publisher")
+    @OneToMany(mappedBy = "publisher", fetch = FetchType.LAZY)
     private List<Book> bookList;
 
     public Publisher() {
