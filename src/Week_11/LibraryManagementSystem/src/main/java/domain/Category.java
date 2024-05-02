@@ -16,7 +16,7 @@ public class Category {
     @Column(name = "category_description")
     private String description;
 
-    @ManyToMany(mappedBy = "categoryList", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "categoryList", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     private List<Book> bookList;
 
     public Category() {
