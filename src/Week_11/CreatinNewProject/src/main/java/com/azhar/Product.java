@@ -16,8 +16,4 @@ public class Product {
     private double price;
     @Column(name = "product_stock")
     private int stock;
-
-    @OneToOne
-    @JoinColumn(name = "product_code_id", referencedColumnName = "code_id")
-    private Code code;
 }
