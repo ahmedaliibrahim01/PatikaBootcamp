@@ -123,7 +123,7 @@
 - `5` entityManager.merge(obj)
 - `5` transaction.commit(); ile kapatılır
 
-`6` **Merge - Update**
+`6` **Remove**
 - `1` Veritabaninda olan bir veriyi silmek için `remove` kullanılır
 - `2` önce find metotu kullanarak id belirtilir
 - `3` transaction.begin(); açalır

@@ -15,17 +15,5 @@ public class App {
         EntityManager entityManager = factory.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
 
-        try {
-            transaction.begin();
-            Author author = entityManager.find(Author.class,2);
-            entityManager.remove(author);
-            System.out.println("Deleted");
-            transaction.commit();
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-
-
-
     }
 }
